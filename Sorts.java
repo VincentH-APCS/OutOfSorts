@@ -3,7 +3,7 @@ public class Sorts{
   public static void bubbleSort(int[] data){
 
     int lastcheck = 0;
-    for(int i = 0; i < data.length - lastcheck; i++){
+    for(int i = 0; i < data.length - lastcheck; ){
       if(data[i] > data[i + 1]){
         for(int j = i; j < data.length - lastcheck - 1; j++){
           if(data[j] > data[j + 1]){
@@ -13,18 +13,11 @@ public class Sorts{
                          }
             Debug.dprint(data);
                        }
+            i = 0;
             lastcheck = lastcheck + 1;
             Debug.dreturn(lastcheck);
           }
-      if(i == data.length - lastcheck - 1 && lastcheck != data.length){
-            i = 0;
-      }
+          else i++;
+       }
     }
   }
-
-  }
-
-  /* if(data[i] > data[i + 1]){
-  i = i - 1;
-        }
-  else i = i;*/
