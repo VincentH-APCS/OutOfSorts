@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Debug{
 
-  public static boolean DEBUG = true;
+  public static boolean DEBUG = false;
 
   public static void dreturn(int a){
     if(DEBUG){
@@ -16,3 +16,5 @@ public class Debug{
     }
   }
 }
+
+//:]
