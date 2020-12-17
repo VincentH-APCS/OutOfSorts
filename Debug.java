@@ -1,10 +1,18 @@
+import java.util.Arrays;
+
 public class Debug{
-  public static void dprint(int[] data){
-    public static boolean DEBUG = true;
+
+  public static boolean DEBUG = true;
+
+  public static void dreturn(int a){
     if(DEBUG){
-      System.out.println(data.toString());
+      System.out.println(a);
     }
   }
 
-
+  public static void dprint(int[] arry){
+    if(DEBUG){
+      System.out.println(Arrays.toString(arry));
+    }
+  }
 }
