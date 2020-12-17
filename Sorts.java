@@ -15,9 +15,16 @@ public class Sorts{
                        }
             lastcheck = lastcheck + 1;
             Debug.dreturn(lastcheck);
-                    }
-            i = i - 1;
-              }
+          }
+      if(i == data.length - lastcheck - 1 && lastcheck != data.length){
+            i = 0;
+      }
     }
+  }
 
   }
+
+  /* if(data[i] > data[i + 1]){
+  i = i - 1;
+        }
+  else i = i;*/
