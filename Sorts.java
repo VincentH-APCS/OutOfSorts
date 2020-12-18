@@ -32,11 +32,13 @@ public class Sorts{
         if(data[j] > checker){
           checker = data[j];
           swapindex = j;
+          Debug.dprint(data);
         }
       }
       swapmon = data[i];
       data[i] = checker;
       data[swapindex] = swapmon;
+      Debug.dprint(data);
     }
   }
 
