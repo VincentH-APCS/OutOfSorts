@@ -20,5 +20,27 @@ public class Sorts{
           else i++;
        }
     }
+
+    public static void selectionSort(int[] data){
+      int checker = 0;
+      int swapindex = 0;
+      int swapmon = 0;
+    for(int i = 0; i < data.length - 1; ){
+      checker = data[i];
+      swapindex = i;
+      for(int j = i; j < data.length - 1; j++){
+        if(data[j] > checker){
+          checker = data[j];
+          swapindex = j;
+        }
+      }
+      swapmon = data[i];
+      data[i] = checker;
+      data[swapindex] = swapmon;
+    }
   }
-//:]
+
+    public static void insertionSort(int[] data){
+    }
+
+  }
