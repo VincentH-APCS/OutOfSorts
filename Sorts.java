@@ -25,11 +25,11 @@ public class Sorts{
       int checker = 0;
       int swapindex = 0;
       int swapmon = 0;
-    for(int i = 0; i < data.length - 1; ){
+    for(int i = 0; i < data.length; i++ ){
       checker = data[i];
       swapindex = i;
-      for(int j = i; j < data.length - 1; j++){
-        if(data[j] > checker){
+      for(int j = i; j < data.length; j++){
+        if(data[j] < checker){
           checker = data[j];
           swapindex = j;
           Debug.dprint(data);
