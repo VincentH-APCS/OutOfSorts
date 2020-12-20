@@ -39,10 +39,10 @@ public class OmniTester{
     RAmaker(randoms);
     RAmaker2(idks);
     RAmaker3(whoa);
-    Sorts.bubbleSort(numbas);
-    Sorts.bubbleSort(randoms);
-    Sorts.bubbleSort(idks);
-    Sorts.bubbleSort(whoa);
-    Sorts.bubbleSort(finalcheck);
+    Sorts.insertionSort(numbas);
+    Sorts.insertionSort(randoms);
+    Sorts.insertionSort(idks);
+    Sorts.insertionSort(whoa);
+    Sorts.insertionSort(finalcheck);
   }
 }
