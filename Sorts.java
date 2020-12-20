@@ -56,8 +56,8 @@ public class Sorts{
         Debug.dprint(data);
       }*/
     //}
-    for(int i = 0; i < data.length; i++){
-      k = i ;
+    for(int i = 1; i < data.length; i++){
+      k = i - 1 ;
       remember = data[i];
       while(k > 0 && remember > data[k]){
         data[k + 1] = data[k];
