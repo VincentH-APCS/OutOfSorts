@@ -51,19 +51,21 @@ public class Sorts{
       }
       else
       for(int i = 1; i < data.length; i++){
-        ime = i;
+        ime = i - 1;
         if(data[i] >= data[i - 1]){
         }
-        else while(ime > 0){
+        else {
           remember = data[i];
-          if(data[ime] >= data[ime - 1]){
+        while(ime > 0){
+          if(remember >= data[ime - 1]){
             data[ime] = remember;
+            data[ime + 1] = data[ime];
             ime = 0;
           }
           else data[ime + 1] = data[ime];
           ime = ime - 1;
         }
-
+    }
           }
         }
       }
