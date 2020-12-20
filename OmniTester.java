@@ -3,7 +3,7 @@ public class OmniTester{
 
   public static void RAmaker(int[] arry){
     Random rng = new Random();
-    rng = new Random(412);
+    rng = new Random(111);
     for(int i = 0; i < arry.length; i++){
       arry[i] = rng.nextInt() % 1000;
     }
@@ -11,7 +11,7 @@ public class OmniTester{
 
    public static void RAmaker2(int[] arry){
      Random nrg = new Random();
-     nrg = new Random(412);
+     nrg = new Random(111);
      for(int i = 0; i < arry.length; i++){
        arry[i] = nrg.nextInt() % 1000;
      }
@@ -19,7 +19,7 @@ public class OmniTester{
 
     public static void RAmaker3(int[] arry){
       Random grn = new Random();
-      grn = new Random(412);
+      grn = new Random(111);
       for(int i = 0; i < arry.length; i++){
         arry[i] = grn.nextInt() % 1000;
       }
@@ -33,7 +33,7 @@ public class OmniTester{
       int[] idks = new int[21];
 
       int[] whoa = new int[19];
-      
+
       int[] finalcheck = {0,0,0,1,0,0,0,1,0,0,2,0,0,0,1,1,5,0,0,1000,0};
       //[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 5, 1000]
     RAmaker(randoms);
