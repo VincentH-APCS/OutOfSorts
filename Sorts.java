@@ -38,11 +38,32 @@ public class Sorts{
       swapmon = data[i];
       data[i] = checker;
       data[swapindex] = swapmon;
-      Debug.dprint(data);
+      //Debug.dprint(data);
     }
+    Debug.dprint(data);
   }
 
     public static void insertionSort(int[] data){
-    }
+      int sorted = 0;
+      int remember = 0;
+      int ime = 0;
+      if(data.length == 0 || data.length == 1){
+      }
+      else
+      for(int i = 1; i < data.length; i++){
+        ime = i;
+        if(data[i] >= data[i - 1]){
+        }
+        else while(ime > 0){
+          remember = data[i];
+          if(data[ime] >= data[ime - 1]){
+            data[ime] = remember;
+            ime = 0;
+          }
+          else data[ime + 1] = data[ime];
+          ime = ime - 1;
+        }
 
-  }
+          }
+        }
+      }
