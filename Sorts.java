@@ -48,11 +48,13 @@ public class Sorts{
       int remember = 0;
       int ime = 0;
       if(data.length == 0 || data.length == 1){
+        Debug.dprint(data);
       }
       else
       for(int i = 1; i < data.length; i++){
         ime = i - 1;
         if(data[i] >= data[i - 1]){
+          Debug.dprint(data);
         }
         else {
           remember = data[i];
@@ -61,6 +63,7 @@ public class Sorts{
             data[ime] = remember;
             data[ime + 1] = data[ime];
             ime = 0;
+            Debug.dprint(data);
           }
           else data[ime + 1] = data[ime];
           ime = ime - 1;
