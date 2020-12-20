@@ -15,30 +15,27 @@ public class Sorts{
                        }
             i = 0;
             lastcheck = lastcheck + 1;
-            Debug.dreturn(lastcheck);
+          Debug.dreturn(lastcheck);
           }
           else i++;
        }
+       Debug.dprint(data);
     }
 
     public static void selectionSort(int[] data){
-      int checker = 0;
       int swapindex = 0;
       int swapmon = 0;
     for(int i = 0; i < data.length; i++ ){
-      checker = data[i];
       swapindex = i;
       for(int j = i; j < data.length; j++){
-        if(data[j] < checker){
-          checker = data[j];
+        if(data[j] < data[swapindex]){
           swapindex = j;
-          Debug.dprint(data);
         }
       }
       swapmon = data[i];
-      data[i] = checker;
+      data[i] = data[swapindex];
       data[swapindex] = swapmon;
-      //Debug.dprint(data);
+      Debug.dprint(data);
     }
     Debug.dprint(data);
   }
