@@ -44,31 +44,27 @@ public class Sorts{
   }
 
     public static void insertionSort(int[] data){
-      int sorted = 0;
       int remember = 0;
-      int ime = 0;
+      int k = 0;
       if(data.length == 0 || data.length == 1){
         Debug.dprint(data);
+      } else{
+      if(data[1] < data[0]){
+        remember = data[1];
+        data[1] = data[0];
+        data[0] = remember;
+        Debug.dprint(data);
+      }}
+    for(int i = 2; i < data.length; i++){
+      k = i;
+      remember = data[i];
+      while(k > 0 && remember > data[k]){
+        data[k] = data[k - 1];
+        k = k - 1;
       }
-      else
-      for(int i = 1; i < data.length; i++){
-        ime = i - 1;
-        if(data[i] >= data[i - 1]){
-          Debug.dprint(data);
-        }
-        else {
-          remember = data[i];
-        while(ime > 0){
-          if(remember >= data[ime - 1]){
-            data[ime] = remember;
-            data[ime + 1] = data[ime];
-            ime = 0;
-            Debug.dprint(data);
-          }
-          else data[ime + 1] = data[ime];
-          ime = ime - 1;
-        }
+      data[k] = remember;
+      Debug.dprint(data);
     }
-          }
-        }
-      }
+      Debug.dprint(data);
+    }
+  }
