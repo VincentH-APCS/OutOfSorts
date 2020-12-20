@@ -16,13 +16,18 @@ public class Tester{
     int[] zeroes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int[] reversed = {7,6,5,4,3,2,1};
     int[] numbas ={98,7,62,0,3,2,1056, -2, 20, -1,43,52,11,43,9};
-    int[] randoms = new int[20];
+    int[] randoms = new int[512000];
+    for(int i = 0; i < randoms.length; i++){
+      randoms[i] = 5;
+    }
 
   //RAmaker(randoms);
-  Sorts.selectionSort(nothing);
-  Sorts.selectionSort(zeroes);
-  Sorts.selectionSort(reversed);
-  Sorts.selectionSort(stats);
+  //Sorts.insertionSort(nothing);
+  //Sorts.insertionSort(zeroes);
+  //Sorts.insertionSort(reversed);
+  //Sorts.insertionSort(stats);
+  //Sorts.insertionSort(numbas);
+  Sorts.bubbleSort(randoms);
 
 }
 }
