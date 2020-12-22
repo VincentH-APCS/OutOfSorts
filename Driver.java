@@ -16,16 +16,19 @@ public class Driver{
       randData[i] =(int)(Math.random()*10000);
     }
       }else if(args[2].equals("equal")){
+        int r = (int)(Math.random() * 10000);
         for(int i = 0; i < randData.length; i++){
-          randData[i] = 7;
+          randData[i] = r;
         }
       }else if(args[2].equals("sorted")){
+        int r = (int)(Math.random() * 10000);
 	      for(int i = 0; i < randData.length; i++){
-          randData[i] = i;
+          randData[i] = r * i * i;
         }
       }else if(args[2].equals("reversed")){
+        int r = (int)(Math.random() * 10000);
 	      for(int i = 0; i < randData.length; i++){
-          randData[i] = randData.length - i;
+          randData[i] = (r - i) / i;
         }
       }
 
